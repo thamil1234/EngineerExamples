@@ -50,5 +50,9 @@ public class EngineerController {
 	public String getlook(@RequestParam(required = false) String jk) {
 		return "My Name is "+jk;
 	}
+	@GetMapping("Saw")
+	public String getsaw(@RequestParam(value = "depth of Sea") String k) {
+		return "Sonar Device is used to saw the "+ k;
+	}
 
 }
